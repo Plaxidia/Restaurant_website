@@ -79,3 +79,22 @@ header .icons #menu
 {
     display: none ;
 }
+/* navbar style ends here */
+
+
+/* media query*/
+@media (max-width :991px)
+{
+   html
+   {
+       font-size: 55%;
+   }
+   header
+   {
+      padding:1rem 2rem;
+   }
+   header .logo img
+    {
+     height:7rem ;
+    }
+}
