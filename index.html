@@ -17,7 +17,7 @@
     <header>
       <a href="#"class="logo"><img src="logo.png"></a>
       <nav class ="navbar">
-          <a href="#Home"class = "active">Home </a>
+          <a href="#Home" class="active">Home </a>
           <a href="#About">About </a>
           <a href="#Menu">Menu</a>
           <a href="#Team">Team</a>
@@ -26,25 +26,37 @@
 
       </nav>
       <div class="icons">
-        <i class="fa-solid fa-bars" id ="menu"></i>
+        <i class="fa-solid fa-bars" id="menu"></i>
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-solid fa-heart"></i>
         <i class="fa-solid fa-cart-shopping"></i>
-
       </div>
     </header>
         <!--header section ends-->
-        <script type ="text/javascript" src="">
-          let menu =document.querySelector('#Menu');
-          let navbar =document.querySelector('.navbar');
-          
-          menu.onclick=()=>{
-            menu.classList.toggle('fa-times');
-            navbar.classList.toggle('active');
-
-          }
-
         
+        <script type ="text/javascript">
+      
+          const menu =document.querySelector('#menu');
+          const navbar = document.querySelector('.navbar');
+          // Display Mobile Menu
+         const mobileMenu = () => {
+         menu.classList.toggle("is-active");
+         navbar.classList.toggle("active");
+        };
+
+        menu.addEventListener("click", mobileMenu);
+
+      //  Close mobile Menu when clicking on a menu item
+        const hideMobileMenu = () => {
+        const menuBars = document.querySelector(".is-active");
+        if (window.innerWidth <= 768 && menuBars) {
+        menu.classList.toggle("is-active");
+        menuLinks.classList.remove("active");
+         }
+        };
+
+       menuLinks.addEventListener("click", hideMobileMenu);
+  
         </script>
 
        
