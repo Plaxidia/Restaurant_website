@@ -7,8 +7,12 @@
     <title>Restaurant website template with html and css</title>
   
     <script src="https://kit.fontawesome.com/128f3c0b4d.js" crossorigin="anonymous"></script>
+       <!--custom css file link -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!--custom css file link -->
+   
+
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -35,21 +39,21 @@
         <!--header section ends-->
 
         <!--slider section starts-->
-        <div class ="home" id ="home ">
-           <div class ="home-slider">
-             <div class="wrapper">
-               <div class="slide  slide1">
+     <div class ="home" id ="home ">
+        <div class ="swiper home-slider">
+         <div class="swiper-wrapper wrapper">
+               <div class=" swiper-slide slide  slide1">
                  <div class="content">
                  <img src ="crown-symbol.png ">
                  <h3>delicious royate </h3>
                  <h1>gift voucher </h1>
                  <p>
-                   give away 
+                   Give Away To Our Beloved Customers
                  </p>
                  <a href = "#" class ="btn"> place your order</a>
                </div>
               </div>
-              <div class="slide  slide2">
+              <div class="swiper-slide slide  slide2">
                 <div class="content">
                 <img src ="crown-symbol.png ">
                 <h3>10% discount on this dish </h3>
@@ -61,7 +65,7 @@
               </div>
            </div>
         
-          <div class="slide  slide3">
+          <div class="swiper-slide slide  slide3">
             <div class="content">
               <img src ="crown-symbol.png ">
               <h3>We are open</h3>
@@ -72,10 +76,47 @@
               <a href = "#" class ="btn"> place your order</a>
             </div>
           </div>
-        
-               
+          <div class="swiper-slide slide  slide4">
+            <div class="content">
+              <img src ="crown-symbol.png ">
+              <h3>We are open</h3>
+              <h1>Vegetarian Food</h1>
+              <p>
+                your best vegan dishes
+              </p>
+              <a href = "#" class ="btn"> place your order</a>
+            </div>
+          </div>
+
+
+        </div>
+         <div class="swiper-pagination"></div>
+      </div> 
+    </div>  
 
          <!--slider section ends-->
+
+
+           <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".home-slider", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop:true,
+      });
+    </script>
+
         <script type ="text/javascript">
       
           const menu =document.querySelector('#menu');
