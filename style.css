@@ -81,6 +81,8 @@ header .icons #menu
     display: none ;
 }
 /* navbar style ends here */
+
+/* slider style starts*/
  .home .home-slider .slide
  {
      display :flex;
@@ -176,9 +178,7 @@ height: 15px!important;
 border-radius: 0!important;
 
 }
-
-
-
+/*slider style end*/
 
 
 /* media query*/
@@ -237,5 +237,23 @@ border-radius: 0!important;
         font-size:2rem;
         background-color: var(--black);
     }
+
+
+    /*slider media query*/
+
+    .home .home-slider .slide
+ {
+     justify-content: center;
+     height: 80vh;
+ }
+ .home .home-slider .slide .content
+ {
+     padding:0;
+ }
+ .home .home-slider .slide .content h1
+ {
+  font-size: 7rem;
+ }
+ 
 }
 
