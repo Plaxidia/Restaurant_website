@@ -207,7 +207,8 @@ padding :8rem 9%;
     margin-bottom: 4rem;
     background: var(--black);
     display: inline;
-    padding-bottom: 3%;
+    padding-bottom: -3%;
+
 }
 .welcome .box-container
 {
@@ -221,6 +222,7 @@ padding :8rem 9%;
     box-shadow: var(--box-shadow);
     text-align: center;
     padding-bottom: 1%;
+    
 }
 
 .welcome .box-container .box .image
@@ -231,10 +233,36 @@ overflow:hidden;
 }
 .welcome .box-container .box .image img
 {
+
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+.welcome .box-container .box .image:hover img
+{
+    transform: scale(1.1);
+}
+.welcome .box-container .box .content
+{
+    padding: 2rem;
+}
+.welcome .box-container .box .content h3
+{
+    color: var(--light-color);
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.welcome .box-container .box .content p
+{
+    color:rgb(233, 227, 227);
+    font-size:1.4rem;
+    font-weight: 300;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+
+
 
 
 /*welcome style ends*/
@@ -312,6 +340,16 @@ overflow:hidden;
  {
   font-size: 7rem;
  }
- 
+ /* welcome section*/
+ .welcome .box-container
+ {
+     flex-wrap:wrap ;
+ }
+ .welcome .box-container .box
+ {
+     width: 100%;
+ }
+
+
 }
 
