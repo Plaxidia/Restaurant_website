@@ -396,6 +396,41 @@ padding: 3rem 0;
     top:0;
 }
 /*our chef styling ends */
+
+/* reservation styling starts*/
+.reservation
+{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+}
+.reservation .image
+{
+    width: 55%;
+    background: url(dining-on-board.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center  center;
+    padding-top:9rem;
+
+}
+.reservation .form
+{
+    background: #181818;
+    width:45%;
+    padding:9 7%;
+}
+.reservation .form h1
+{
+    color:#fff;
+}
+
+.reservation .form-holder
+{
+    display: flex;
+}
+/* reservation styling ends*/
+
 /* media query*/
 @media (max-width :991px)
 {
