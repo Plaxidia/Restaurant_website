@@ -17,7 +17,8 @@ This is a basic restaurant website built for learning purposes.
 
 ![Screenshot 2022-05-07 at 16 28 31](https://user-images.githubusercontent.com/90321105/167257758-e8ac9a30-c60e-4982-86ff-77dea49169ce.png)
 
-![Screenshot 2022-05-07 at 16 28 50](https://user-images.githubusercontent.com/90321105/167257762-6bbca62a-2470-4
+![Screenshot 2022-05-07 at 16 28 50](https://user-images.githubusercontent.com/90321105/167257903-a02cd995-7ea2-4728-a827-39a5ef652776.png)
+
 
 
 ![Screenshot 2022-05-07 at 16 28 58](https://user-images.githubusercontent.com/90321105/167257770-eff63c9b-194b-445d-a419-a39fc8baabfa.png)
